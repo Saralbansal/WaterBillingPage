@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="/images/PMClogo.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Water Billing Management System - Account Statement</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Light gray background */
+        }
+        h1 {
+            margin-top: 20px;
+            margin-left: 20px;
+            color: #333; /* Dark gray color */
+        }
+        .subheading {
+            text-align: center;
+            color: white; /* White font color */
+            margin-bottom: 20px;
+            background: #31bcc1;
+            padding: 0.1px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff; /* White background */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex; /* Use flexbox for layout */
+            flex-wrap: wrap; /* Allow wrapping */
+        }
+        .box {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff; /* White background */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex: 1; /* Equal width for both boxes */
+            margin-right: 20px; /* Adjust spacing between boxes */
+            box-sizing: border-box; /* Include padding and border in width calculation */
+            width: calc(50% - 10px); /* 50% width with margin */
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        table {
+            width: calc(100% - 40px); /* Reduce table width */
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: 20px; /* Add margin to the left */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #add8e6; /* Light blue background */
+            color: #333; /* Dark gray color */
+        }
+        .bill-date, .bill-no, .debit-credit-arrears, .mtr-status-flag {
+            background-color: #add8e6; /* Lighter shade of blue */
+        }
+    </style>
+</head>
+<body>
+    <h1>Water Billing Management System</h1>
+    <hr style="margin-left: 20px;"> <!-- Added line after heading -->
+    <div class="subheading">
+        <h3>Account Statement</h3>
+    </div>
+    <div class="container">
+        <div class="box">
+            <p><b>Consumer No :</b> SC002400</p>
+            
+            <p><b>Old A/C No :</b> 834001221</p>
+            
+            <p><b>Tariff Category :</b> NON-DOMESTIC</p>
+            <p><b>Connection Status:</b> Connected</p>
+            <p><b>Latitude :</b> </p>
+            <p><b>Connection Size :</b> 0.5 Inch</p>
+            <p><b>JE Name :</b> GIRAGE VAISHALI</p>
+            <p><b>AE Name :</b> SHANKAR DUDUSKAREE</p>
+            <p><b>Forecasted Amount:</b> </p>
+        </div>
+        <div class="box">
+            <p><b>Consumer Name :</b> MR RAHUL SINGH</p>
+            <p><b>Connection Date :</b> 23/02/2024</p>
+            <p><b>Meter Address :</b> 1201 SHIVAJIANAGR PUNE 411005</p>
+            <p><b>Tariff Code :</b> 116 ( WORKSHOP )</p>
+            <p><b>Longitude :</b> </p>
+            
+            <p><b>Nos of Families :</b> 1</p>
+            
+            <p><b>Reader Name :</b> ASHOK MOKASHI - 9604068675</p>
+            <p><b>EE Name :</b> SHRI. PRASAD LUMAJI BHANGE</p>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Sr No.</th>
+                <th scope="col" class="bill-date">Bill Date</th>
+                <th scope="col">From Date</th>
+                <th scope="col">To Date</th>
+                <th scope="col" class="bill-no">Bill/JV No</th>
+                <th scope="col" class="debit-credit-arrears">Debit</th>
+                <th scope="col" class="debit-credit-arrears">Credit</th>
+                <th scope="col" class="debit-credit-arrears">Arrears</th>
+                <th scope="col" class="mtr-status-flag">Mtr Status</th>
+                <th scope="col" class="mtr-status-flag">Flag</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>02/01/2022</td>
+                <td>01/01/2022</td>
+                <td>31/12/2022</td>
+                <td>PM03033798</td>
+                <td>102251.430</td>
+                <td>0.000</td>
+                <td>102251.430</td>
+                <td>NORMAL</td>
+                <td>BILL</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>22/04/2023</td>
+                <td>01/11/2023</td>
+                <td>31/12/2023</td>
+                <td>PM00040000</td>
+                <td>2880.000</td>
+                <td>0.000</td>
+                <td>105131.430</td>
+                <td>FAULTY</td>
+                <td>BILL</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>19/06/2023</td>
+                <td>01/01/2023</td>
+                <td>31/03/2023</td>
+                <td>PM00107856</td>
+                <td>4320.000</td>
+                <td>0.000</td>
+                <td>109451.430</td>
+                <td>FAULTY</td>
+                <td>BILL</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>19/10/2023</td>
+                <td>01/04/2023</td>
+                <td>31/08/2023</td>
+                <td>PM00169500</td>
+                <td>7200.000</td>
+                <td>0.000</td>
+                <td>116651.430</td>
+                <td>NORMAL</td>
+                <td>BILL</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>22/01/2023</td>
+                <td>01/09/2023</td>
+                <td>31/12/2023</td>
+                <td>PM00202111</td>
+                <td>5760.000</td>
+                <td>0.000</td>
+                <td>122411.430</td>
+                <td>NORMAL</td>
+                <td>BILL</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Total</td>
+                <td>117111.430</td>
+                <td>0.000</td>
+                <td>556896.720</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="clearfix"></div>
+    <div class="row col-md-offset-3" >
+        <br>
+        <b><center>THIS IS A COMPUTER GENERATED ACCOUNT STATEMENT AND DOES NOT REQUIRE SIGNATURE</b> </center>
+    </div>
+    <hr style="margin-left: 20px;"> <!-- Added line after statement -->
+     <div class="footerStyle">
+        <p>
+
+            <span style="float: left; font-size: 13px;">
+                Copyright © 2023 Pune Municipal Corporation. All rights reserved.
+            </span>
+            <span style="width:50px">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span style="float: right;font-size: 13px;">
+                <span id="clock"></span> Design & Developed By:Monarch IT Solutions Pvt. Ltd.
+            </span>
+        </p>
+    </div>
+    </div>
+</body>
+</html>
